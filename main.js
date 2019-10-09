@@ -20,7 +20,9 @@
 //const repeat = require("./ex20")
 //const reverse = require("./ex21")
 //const splice = require("./ex22")
-const trim = require("./ex23")
+//const trim = require("./ex23")
+const endsWith = require("./ex24")
+
 
 
 
@@ -53,7 +55,9 @@ const trim = require("./ex23")
 //console.log(repeat('w', 3))
 //console.log(reverse('chOpper'))
 //console.log(splice('Tony ChOpper', 0, 4,'Tony Tony'))
-console.log(trim('--Tony Tony ChOpper--', '-'))
+//console.log(trim('Tony Tony ChOpper'))
+console.log(endsWith('Tony Tony ChOpper', 'Tony'))
+
 
 
 

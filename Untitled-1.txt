@@ -1,0 +1,5 @@
+module.exports = function trim( str = "", whitespaceopt = ' '){
+    let newStr = ''
+    newStr = str.slice((str.length - 1) - end.length, str.length)
+    
+}

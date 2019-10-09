@@ -1,12 +1,21 @@
 module.exports = function trim( str = "", whitespaceopt = ' '){
     let newStr = ''
-    for(let i = 0; i != str.length; i++){
-        let code = str.charCodeAt(i - 1);
-        if((str[i] === whitespaceopt && ((code >= 65 && code <= 90) || (code >= 97 && code <= 122) )))
-        {
+    let final = ''
+    for (let i = 0; i != str.length; i++){
+        if(str[i] != whitespaceopt){
+            newStr = str.slice(i, str.length)
+            break
         }
-        else
-            newStr += str[i]
     }
-    return newStr
+    for (let j = newStr.length; j != 0; j--){
+        if(whitespaceopt === ' ' && str[j] != whitespaceopt){
+            final = newStr.slice(0, j)
+            break
+        }
+        else if(str[j] != whitespaceopt){
+            final = newStr.slice(0, j - 1)
+            break
+        }
+    }
+    return final
 }
