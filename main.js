@@ -16,7 +16,13 @@
 //const countWords = require("./ex16")
 //const indexOf = require("./ex17")
 //const lastIndexOf = require("./ex18")
-const insert = require("./ex19")
+//const insert = require("./ex19")
+//const repeat = require("./ex20")
+//const reverse = require("./ex21")
+//const splice = require("./ex22")
+const trim = require("./ex23")
+
+
 
 
 
@@ -43,7 +49,12 @@ const insert = require("./ex19")
 //console.log(countWords('Tony Tony ChOpper'))
 //console.log(indexOf('ChOpper', 'p'))
 //console.log(lastIndexOf('ChOpper', 'p'))
-console.log(insert('Chopper', 'O', 2))
+//console.log(insert('Tony ', 'Tony Chopper', 4))
+//console.log(repeat('w', 3))
+//console.log(reverse('chOpper'))
+//console.log(splice('Tony ChOpper', 0, 4,'Tony Tony'))
+console.log(trim('--Tony Tony ChOpper--', '-'))
+
 
 
 
